@@ -1,0 +1,19 @@
+.page-not-found {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error-image {
+  height: 50rem;
+}
+
+.error-heading {
+  font-size: 6rem;
+}
+
+.error-p {
+  font-size: 2rem;
+}
