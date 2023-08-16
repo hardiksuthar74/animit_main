@@ -15,7 +15,7 @@ const Button: FC<buttonProps> = (props) => {
   };
 
   return (
-    <button onClick={redirectFunction} className="btn">
+    <button type="button" onClick={redirectFunction} className="btn">
       {props.text}
     </button>
   );
