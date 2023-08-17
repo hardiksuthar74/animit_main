@@ -2,9 +2,11 @@
   padding: 2.4rem;
 }
 
-/* #header { */
-/* background-color: #bdd5ef; */
-/* } */
+#header {
+  position: relative;
+
+  /* background-color: #bdd5ef; */
+}
 
 .header-flex {
   display: flex;

@@ -1,0 +1,41 @@
+.anime-home-image {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  z-index: -11;
+  filter: blur(1px);
+}
+
+.deslide-cover {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 30%;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    270deg,
+    transparent 0,
+    rgb(36, 36, 40) 30%,
+    rgb(36, 36, 40) 70%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    270deg,
+    transparent 0,
+    rgb(36, 36, 40) 30%,
+    rgb(36, 36, 40) 70%,
+    transparent
+  );
+}
+
+@media (max-width: 44em) {
+  .deslide-cover {
+    left: 0;
+    height: 80vmin;
+  }
+}
