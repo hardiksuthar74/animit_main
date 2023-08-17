@@ -12,17 +12,16 @@
 }
 
 .blur-background-login {
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
 #login-modal-container {
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,4 +41,18 @@
 
 #login-modal img {
   width: 100%;
+}
+
+@media (max-width: 44em) {
+  #login-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+  }
+
+  .login-modal-image {
+    display: none;
+  }
 }

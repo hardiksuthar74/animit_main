@@ -7,7 +7,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
   text-align: center;
+  margin: 0 auto;
 }
 
 #login-form .login-header {
@@ -30,4 +32,13 @@
   padding: 0.8rem 1.2rem;
   box-shadow: 1rem;
   color: #f6f6f6;
+}
+
+.login-label {
+  text-align: left;
+}
+.login-error {
+  text-align: left;
+  color: red;
+  font-size: 1.4rem;
 }

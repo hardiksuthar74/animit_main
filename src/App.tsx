@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./components/AppLayout/AppLayout";
 
 import "./App.css";
+import "./queries.css";
 import Home from "./pages/Home/Home";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";

@@ -7,14 +7,18 @@ const Login: FC = () => {
     <form id="login-form">
       <h1 className="login-header">Welcome back!</h1>
       <div className="login-form-row">
-        <label></label>
+        <label className="login-label" htmlFor="Email">
+          Email
+        </label>
         <input className="login-form-input" type="email" />
-        <span></span>
+        <span className="login-error"></span>
       </div>
       <div className="login-form-row">
-        <label></label>
+        <label className="login-label" htmlFor="Password">
+          Password
+        </label>
         <input className="login-form-input" type="password" />
-        <span></span>
+        <span className="login-error"> </span>
       </div>
       <div className="login-form-row">
         <Button link="home" text="Log In" />
