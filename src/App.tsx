@@ -22,8 +22,8 @@ const App: FC = () => {
         <Route index element={<Navigate replace to="home" />} />
         <Route path="home" element={<Home />} />
       </Route>
-      <Route path="/auth" element={<Authentication />} />
       <Route path="*" element={<PageNotFound />} />
+      <Route path="/auth" element={<Authentication />} />
     </Routes>
   );
 };

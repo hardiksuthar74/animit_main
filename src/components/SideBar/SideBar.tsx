@@ -4,6 +4,7 @@ import {
   closeSideBar,
   sideBarState,
 } from "../../features/sidebar/sidebarSlice";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   const sideBarOpen = useAppSelector(sideBarState);
@@ -23,7 +24,33 @@ const SideBar = () => {
           !sideBarOpen ? "hide-sidebar" : "unhide-sidebar"
         }`}
       >
-        SideBar
+        <button onClick={closeSideBarMethod} className="sidebar-close">
+          Close menu
+        </button>
+        <div>
+          <ul className="sidebar-nav-link">
+            <div>
+              <Link onClick={closeSideBarMethod} to="home">
+                Home
+              </Link>
+            </div>
+            <div>
+              <Link onClick={closeSideBarMethod} to="popular">
+                Popular
+              </Link>
+            </div>
+            <div>
+              <Link onClick={closeSideBarMethod} to="movies">
+                Movies
+              </Link>
+            </div>
+            <div>
+              <Link onClick={closeSideBarMethod} to="specials">
+                Specials
+              </Link>
+            </div>
+          </ul>
+        </div>
       </div>
     </>
   );
