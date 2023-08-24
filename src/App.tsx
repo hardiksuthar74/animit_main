@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import Authentication from "./pages/Authentication/Authentication";
 import { FC } from "react";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import AnimeDetailPage from "./pages/AnimeDetailPage/AnimeDetailPage";
 
 const App: FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: FC = () => {
       </Route>
       <Route path="/auth" element={<Authentication />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="anime/:animeid" element={<AnimeDetailPage />} />
     </Routes>
   );
 };

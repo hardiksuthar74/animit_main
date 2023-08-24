@@ -6,8 +6,8 @@ import "./TopBar.css";
 import { FaBars } from "react-icons/fa6";
 import { NavigateFunction, useNavigate } from "react-router-dom";
 import SideBar from "../SideBar/SideBar";
-import { useAppDispatch } from "../../app/hook";
-import { openSideBar } from "../../features/sidebar/sidebarSlice";
+import { useAppDispatch } from "../../hooks/hook";
+import { openSideBar } from "../../redux/slice/sidebarSlice";
 
 const TopBar = () => {
   const [login] = useState(true);

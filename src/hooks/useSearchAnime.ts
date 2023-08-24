@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getAllAnimes } from "./animeJikan";
+import { getAllAnimes } from "../services/api/animeApi";
 
 export function useSearchAnime(debouncedSearchTerm: string) {
   const {
@@ -9,19 +9,6 @@ export function useSearchAnime(debouncedSearchTerm: string) {
   } = useQuery({
     queryKey: ["search", debouncedSearchTerm],
     queryFn: () => getAllAnimes(debouncedSearchTerm),
-  });
-
-  return { isLoading, searchedAnime, error };
-}
-
-export function useAnime() {
-  const {
-    isLoading,
-    data: searchedAnime,
-    error,
-  } = useQuery({
-    queryKey: ["search"],
-    queryFn: () => getAllAnimes(""),
   });
 
   return { isLoading, searchedAnime, error };

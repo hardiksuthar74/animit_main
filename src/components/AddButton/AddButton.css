@@ -1,0 +1,12 @@
+.addButtonContainer {
+  padding: 1rem 1rem;
+}
+
+.addButtonContainer button {
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  border: 1px;
+  cursor: pointer;
+  background-color: #cf9fff;
+}

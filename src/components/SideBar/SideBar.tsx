@@ -1,9 +1,6 @@
 import "./SideBar.css";
-import { useAppDispatch, useAppSelector } from "../../app/hook";
-import {
-  closeSideBar,
-  sideBarState,
-} from "../../features/sidebar/sidebarSlice";
+import { useAppDispatch, useAppSelector } from "../../hooks/hook";
+import { closeSideBar, sideBarState } from "../../redux/slice/sidebarSlice";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {

@@ -1,0 +1,20 @@
+.animeDetailPageContainer {
+  padding: 3.8rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.animeDetailPageContainer p {
+  font-size: 2rem;
+}
+
+.animeDetailPageLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.animeHeaderTitle {
+  color: #cf9fff;
+}

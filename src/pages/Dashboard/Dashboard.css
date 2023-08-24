@@ -1,6 +1,5 @@
 .dashboard-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  margin: 0 auto;
 }

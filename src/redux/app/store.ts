@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { sideBarSlice } from "../features/sidebar/sidebarSlice";
+import sideBarSlice from "../slice/sidebarSlice";
+import searchAnimeSlice from "../slice/searchAnimeSlice";
 
 export const store = configureStore({
   reducer: {
-    sideBar: sideBarSlice.reducer,
+    sideBar: sideBarSlice,
+    searchAnime: searchAnimeSlice,
   },
 });
 
