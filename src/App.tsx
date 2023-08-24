@@ -8,6 +8,7 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import Authentication from "./pages/Authentication/Authentication";
 import { FC } from "react";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 const App: FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: FC = () => {
         <Route path="*" element={<PageNotFound />} />
       </Route>
       <Route path="/auth" element={<Authentication />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   );
 };
