@@ -8,7 +8,7 @@ import "./ListAnime.css";
 interface animeType {
   mal_id: number;
   title: string;
-  images: string;
+  image: string;
   type: string;
   episodes: string;
   status: string;

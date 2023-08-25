@@ -10,6 +10,7 @@ import Authentication from "./pages/Authentication/Authentication";
 import { FC } from "react";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AnimeDetailPage from "./pages/AnimeDetailPage/AnimeDetailPage";
+import AnimeForm from "./pages/AnimeForm/AnimeForm";
 
 const App: FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: FC = () => {
       <Route path="/auth" element={<Authentication />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="anime/:animeid" element={<AnimeDetailPage />} />
+      <Route path="animeForm/:animeid" element={<AnimeForm />} />
     </Routes>
   );
 };

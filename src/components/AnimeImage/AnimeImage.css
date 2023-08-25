@@ -3,5 +3,6 @@
 }
 
 .animeImageContainer img {
-  width: 100%;
+  width: auto;
+  height: 350px;
 }

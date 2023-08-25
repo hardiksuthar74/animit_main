@@ -18,7 +18,7 @@ interface animeType {
   synopsis: string;
 }
 
-const AnimeDetailPage = () => {
+const AnimeDetailPage: React.FC = () => {
   const { animeid } = useParams();
 
   const { isLoading, searchedAnime } = useSingleAnime(animeid);
@@ -28,7 +28,7 @@ const AnimeDetailPage = () => {
   const anime: animeType = searchedAnime;
 
   const {
-    images,
+    image,
     title,
     synopsis,
     episodes,
@@ -43,8 +43,8 @@ const AnimeDetailPage = () => {
   return (
     <div className="animeDetailPageContainer">
       <div className="animeDetailPageLeft">
-        <AnimeImage image={images} />
-        <AddButton />
+        <AnimeImage image={image} />
+        <AddButton animeId={animeid} />
       </div>
       <div>
         <h1>
