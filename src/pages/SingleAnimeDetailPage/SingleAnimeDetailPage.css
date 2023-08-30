@@ -1,18 +1,22 @@
-/* .single-anime-background-bw {
+.single-anime-background-bw {
   position: relative;
   z-index: -111;
-} */
+}
 
 .single-anime-background-bw {
   width: 120rem;
-  position: absolute;
 }
+
 .single-anime-background-bw img {
   position: absolute;
   width: 100%;
   opacity: 0.35;
   filter: blur(20px) grayscale(1);
-  z-index: -11111111;
+}
+
+.wrapper {
+  position: relative;
+  z-index: -20;
 }
 
 .single-anime-grid {
@@ -36,12 +40,12 @@
 }
 
 .hiddenPage {
-  opacity: 0;
   filter: blur(10px);
   transition: all 0.3s ease-in-out;
 }
 
 .showHiddenPage {
-  opacity: 1;
   filter: blur(0);
+  position: relative;
+  z-index: -11;
 }

@@ -31,49 +31,47 @@ const SingleAnimeDetailPage = () => {
 
   return (
     <div className={`hiddenPage ${state === 1 ? "showHiddenPage" : ""}`}>
-      <div className={`single-anime-background-bw `}>
+      <div className="single-anime-background-bw">
         <img draggable="false" className="" src={Bleach} alt="" />
       </div>
-      <div className="wrapper">
-        <div className="single-anime-grid">
-          <div className="second-single-anime-grid">
-            <div>
-              <img src={BleachSmall} draggable="false" alt="" />
-            </div>
-            <div>
-              <p className="singleAnimeTitle">
-                Bleach: Thousand-Year Blood War - The Separation
-              </p>
+      <div className="single-anime-grid">
+        <div className="second-single-anime-grid">
+          <div>
+            <img src={BleachSmall} draggable="false" alt="" />
+          </div>
+          <div>
+            <p className="singleAnimeTitle">
+              Bleach: Thousand-Year Blood War - The Separation
+            </p>
 
-              <div className="type-anime-home">
-                <p>
-                  <FaPlay />
-                  TV
-                </p>
-                <p>
-                  <FaRegCalendar />
-                  Jul 8, 2023
-                </p>
-                <p className="anime-resolutaion">HD</p>
-                {/* <p className="anime-home-episodes">
+            <div className="type-anime-home">
+              <p>
+                <FaPlay />
+                TV
+              </p>
+              <p>
+                <FaRegCalendar />
+                Jul 8, 2023
+              </p>
+              <p className="anime-resolutaion">HD</p>
+              {/* <p className="anime-home-episodes">
             <FaRegClosedCaptioning />8
         </p> */}
-              </div>
+            </div>
 
-              <div className="anime-home-synopsis singleAnimeWholeDetail">
-                {animeDetail}
-              </div>
-              <div className="button-anime-home-container">
-                <button>
-                  <FaPlus />
-                  Add to List
-                </button>
-              </div>
+            <div className="anime-home-synopsis singleAnimeWholeDetail">
+              {animeDetail}
+            </div>
+            <div className="button-anime-home-container">
+              <button>
+                <FaPlus />
+                Add to List
+              </button>
             </div>
           </div>
-          <div className="aboutSingleAnime">
-            <img src={loginPicture} alt="" />
-          </div>
+        </div>
+        <div className="aboutSingleAnime">
+          <img src={loginPicture} alt="" />
         </div>
       </div>
     </div>

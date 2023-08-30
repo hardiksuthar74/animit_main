@@ -1,0 +1,17 @@
+#footer {
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+#footer img {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.footerLogo {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer p {
+  margin-top: 1rem;
+}
