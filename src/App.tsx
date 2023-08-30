@@ -11,6 +11,7 @@ import { FC } from "react";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AnimeDetailPage from "./pages/AnimeDetailPage/AnimeDetailPage";
 import AnimeForm from "./pages/AnimeForm/AnimeForm";
+import SingleAnimeDetailPage from "./pages/SingleAnimeDetailPage/SingleAnimeDetailPage";
 
 const App: FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: FC = () => {
       >
         <Route index element={<Navigate replace to="home" />} />
         <Route path="home" element={<Home />} />
+        <Route path="animes/:animeName" element={<SingleAnimeDetailPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
       <Route path="/auth" element={<Authentication />} />

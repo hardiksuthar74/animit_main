@@ -1,0 +1,47 @@
+/* .single-anime-background-bw {
+  position: relative;
+  z-index: -111;
+} */
+
+.single-anime-background-bw {
+  width: 120rem;
+  position: absolute;
+}
+.single-anime-background-bw img {
+  position: absolute;
+  width: 100%;
+  opacity: 0.35;
+  filter: blur(20px) grayscale(1);
+  z-index: -11111111;
+}
+
+.single-anime-grid {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  column-gap: 4rem;
+}
+
+.second-single-anime-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 2rem;
+  padding: 5rem 0rem 5rem 10rem;
+}
+
+.singleAnimeTitle {
+  font-size: 4rem;
+}
+.singleAnimeWholeDetail {
+  font-size: 1.4rem;
+}
+
+.hiddenPage {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.showHiddenPage {
+  opacity: 1;
+  filter: blur(0);
+}

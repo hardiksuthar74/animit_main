@@ -1,3 +1,12 @@
+.anime-home {
+  padding: 8rem;
+  padding-top: 8rem;
+  padding-left: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+}
+
 .anime-home-image {
   position: absolute;
   width: 100%;
@@ -33,9 +42,112 @@
   );
 }
 
+.anime-home-detail-container {
+  font-size: 2rem;
+}
+
+.spotlight {
+  color: #cf9fff;
+}
+
+.anime-home-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.type-anime-home {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.type-anime-home p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.6rem;
+}
+
+.anime-resolutaion {
+  background-color: #cf9fff;
+  padding: 3px 4px;
+  border-radius: 5px;
+  line-height: 1em;
+  font-weight: 600;
+  font-size: 12px;
+  color: #151515;
+}
+
+.anime-home-synopsis {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.anime-home-episodes {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  padding: 3px 4px;
+  border-radius: 5px;
+  background-color: #cf9fff;
+  color: #151515;
+}
+
+.button-anime-home-container {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.button-anime-home-container button {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.4rem;
+  background-color: #cf9fff;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  color: #151515;
+  border: 1px;
+}
+
 @media (max-width: 44em) {
   .deslide-cover {
     left: 0;
     height: 80vmin;
+  }
+
+  .anime-home {
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+    padding-top: 6rem;
+  }
+
+  .type-anime-home {
+    display: none;
+  }
+
+  .anime-resolutaion {
+    display: none;
+  }
+
+  .anime-home-synopsis {
+    display: none;
+  }
+  .spotlight {
+    font-size: 2rem;
+  }
+  .anime-home-title {
+    font-size: 2rem;
   }
 }
