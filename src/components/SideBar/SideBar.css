@@ -1,3 +1,7 @@
+.body-hidden {
+  overflow: hidden;
+}
+
 .sidebar-container {
   position: fixed;
   top: 0;
@@ -10,7 +14,7 @@
   justify-content: flex-start;
   align-items: center;
   display: block;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .hide-sidebar {

@@ -1,17 +1,24 @@
 import { FaPlay, FaPlus, FaRegCalendar } from "react-icons/fa6";
-import Bleach from "../../assets/bleach.jpg";
 import BleachSmall from "../../assets/bleackSmall.jpg";
-import loginPicture from "../../assets/luffy_login.png";
-import { useState, useEffect } from "react";
+
+import { useEffect } from "react";
 
 import "./SingleAnimeDetailPage.css";
+const imageArray = [
+  "../../assets/robin.png",
+  "../../assets/ace.png",
+  "../../assets/luffy_login.png",
+  "../../assets/sanji.png",
+  "../../assets/law.png",
+];
+
+const randomNumber: number = Math.floor(Math.random() * 5);
 
 const SingleAnimeDetailPage = () => {
-  const [state, setState] = useState(0);
-
   useEffect(() => {
-    setState(1);
-  }, []);
+    const topBar = document.querySelector("#header");
+    topBar?.classList.add("topBar");
+  });
 
   const animeDetail: string = `Substitute Soul Reaper Ichigo Kurosaki spends his days fighting
     against Hollows, dangerous evil spirits that threaten Karakura Town.
@@ -30,10 +37,7 @@ const SingleAnimeDetailPage = () => {
     itself comes to an end.`;
 
   return (
-    <div className={`hiddenPage ${state === 1 ? "showHiddenPage" : ""}`}>
-      <div className="single-anime-background-bw">
-        <img draggable="false" className="" src={Bleach} alt="" />
-      </div>
+    <>
       <div className="single-anime-grid">
         <div className="second-single-anime-grid">
           <div>
@@ -56,7 +60,7 @@ const SingleAnimeDetailPage = () => {
               <p className="anime-resolutaion">HD</p>
               {/* <p className="anime-home-episodes">
             <FaRegClosedCaptioning />8
-        </p> */}
+          </p> */}
             </div>
 
             <div className="anime-home-synopsis singleAnimeWholeDetail">
@@ -71,10 +75,13 @@ const SingleAnimeDetailPage = () => {
           </div>
         </div>
         <div className="aboutSingleAnime">
-          <img src={loginPicture} alt="" />
+          <img src={imageArray[randomNumber]} alt="" />
+        </div>
+        <div className="single-anime-background-bw">
+          <div draggable="false" className="" />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

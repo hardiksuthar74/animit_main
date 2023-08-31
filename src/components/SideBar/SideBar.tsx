@@ -2,9 +2,21 @@ import "./SideBar.css";
 import { useAppDispatch, useAppSelector } from "../../hooks/hook";
 import { closeSideBar, sideBarState } from "../../redux/slice/sidebarSlice";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const SideBar = () => {
   const sideBarOpen = useAppSelector(sideBarState);
+
+  const targetBody = () => {
+    const body = document.querySelector("body");
+    if (sideBarOpen) body?.classList.add("body-hidden");
+
+    if (!sideBarOpen) body?.classList.remove("body-hidden");
+  };
+
+  useEffect(() => {
+    targetBody();
+  });
 
   const dispatch = useAppDispatch();
 
