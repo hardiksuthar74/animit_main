@@ -1,0 +1,11 @@
+.adminLinksContainer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #cf9fff;
+}
+
+.adminLinksContainer a {
+  color: #cf9fff;
+}

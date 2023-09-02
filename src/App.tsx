@@ -12,6 +12,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import AnimeDetailPage from "./pages/AnimeDetailPage/AnimeDetailPage";
 import AnimeForm from "./pages/AnimeForm/AnimeForm";
 import SingleAnimeDetailPage from "./pages/SingleAnimeDetailPage/SingleAnimeDetailPage";
+import Admin from "./pages/Admin/Admin";
 
 const App: FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: FC = () => {
         <Route path="animes/:animeName" element={<SingleAnimeDetailPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
+      <Route path="/admin/*" element={<Admin />} />
       <Route path="/auth" element={<Authentication />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="anime/:animeid" element={<AnimeDetailPage />} />
