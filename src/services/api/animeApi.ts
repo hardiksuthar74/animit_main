@@ -1,3 +1,5 @@
+import { useQuery } from "@tanstack/react-query";
+
 const getAllAnimes = async (query: string): Promise<void> => {
   const response = await fetch("http://127.0.0.1:5000/animes/search", {
     method: "POST",
@@ -29,4 +31,31 @@ const getSingleAnimes = async (query: string | undefined): Promise<void> => {
   return animeData;
 };
 
-export { getAllAnimes, getSingleAnimes };
+const fetchAnimeData = async (): Promise<void> => {
+  const url = "http://127.0.0.1:5000";
+  try {
+    const response = await fetch(`${url}/animes/favourites`);
+
+    const data = await response.json();
+    const animeData = data?.data;
+
+    return animeData;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export function useFavAnime() {
+  const {
+    isLoading,
+    data: anime,
+    error,
+  } = useQuery({
+    queryKey: ["favAnime"],
+    queryFn: () => fetchAnimeData(),
+  });
+
+  return { isLoading, anime, error };
+}
+
+export { getAllAnimes, getSingleAnimes, fetchAnimeData };
